@@ -3,15 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Glaccy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="154" height="64" alt="Логотип Glaccy Shop">
-        </a>
+        <ul class="main-navigation-logo">
+          <li><a class="main-header-logo" href="index.html"> <img src="img/logo.png" width="154" height="64" alt="Логотип Glaccy Shop"></a></li>
+        </ul>
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
+            <ul class="section-of-catalog">
+              <li class="iside-of-catalog">
+                <h2 class="visually-hidden">Меню каталога</h2>
+                <ul class="modal-catalog-list">
+                  <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Новинки</a></li>
+                  <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Сливочное</a></li>
+                  <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Щербеты</a></li>
+                  <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Фруктовый лед</a></li>
+                  <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Мелорин</a></li>
+                </ul>
+              </li>
+            </ul>
           <li><a href="pay.html">Доставка и оплата</a></li>
           <li><a href="info.html">О компании</a></li>
         </ul>
@@ -21,10 +36,38 @@
           <a class="login-link" href="login.html">
           Вход
           </a>
+            <ul class="user-login-navigation-form">
+              <li class="iside-of-login">
+                <section class="inside-of-login">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form action="index.html" method="post">
+                    <label class="visually hidden" for="user-email">Логин</label>
+                    <input type="email" name="email" required placeholder="Электронная почта" autocomplete="on" id="user-email">
+                    <label class="visually hidden" for="user-password">Пароль</label>
+                    <input type="password" name="password" required placeholder="Пароль" autocomplete="on" id="usser-password">
+                    <button class="button" type="submit"> Войти</button>
+                  </form>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистарция</a>
+                </section>
+              </li>
+            </ul>
         </li>
       </ul>
-      <a href="#"><button class="button-to-search">Поиск</button></a>
-      <a href="#"><button class="button-to-sell">Корзина</button></a>
+      <a href="#"><button type="button" class="button-to-search">Поиск</button></a>
+        <ul class="button-of-search-inside">
+          <li>
+            <section class="button-of-search-inside">
+              <form class="button-of-search-inside" action="index.ru" method="post">
+                <label class="visually-hidden" for="search_button">Поле для поиска</label>
+                <input type="search" name="search" id="search_button" placeholder="Что ищем?">
+                <!---правильно ли у кнопки "поиска" внутри поиска тип button? или все же надо ставить submit, потому что мы отправляем формой запрос?--->
+                <input type="submit" name="button" value="Поиск">
+              </form>
+            </section>
+          </li>
+        </ul>
+      <a href="#"><button type="button" class="button-to-sell">Корзина</button></a>
       <p class="connect">
         С 10 до 20, ежедневно
         8 812 450 25 25
@@ -32,14 +75,21 @@
     </header>
     <main class="container">
       <h1 class="gallery">Крем-брюле и пломбир с малиновым джемом</h1>
+      <a href="#"><button type="button" class="button-container">Дайте оба!</button></a>
       <section class="gallery">
         <h2 class="visually-hidden">Фото мороженного</h2>
-        <figure class="gallery-content">
-          <a href="#"><img src="img/icecream.jpg" width="286" height="164" alt="Мороженное в стакане"></a>
-        </figure>
-        <button class="slide first"></button>
-        <button class="slide second"></button>
-        <button class="slide third"></button>
+        <a href="#"><img src="img/icecream.jpg" width="286" height="164" alt="Мороженное в стакане"></a>
+        <ul class="slides-swiches">
+          <li class="slide-radio">
+            <button class="slide-bth">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-bth">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-bth">Третий слайд</button>
+          </li>
+        </ul>
       </section>
       <section class="action">
         <h2 class="visually-hidden">Акции</h2>
@@ -47,12 +97,12 @@
           <li class="action-item">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового мороженного бесплатно.</p>
-            <a href="#"><button class="action-button">Хочу варенье!</button></a>
+            <a href="#"><button type="button" class="button">Хочу варенье!</button></a>
           </li>
           <li class="action-item">
             <h3>Школадки даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового мороженного бесплатно.</p>
-            <a href="#"><button class="action-button">Хочу шоколадки!</button></a>
+            <a href="#"><button type="button" class="button">Хочу шоколадки!</button></a>
           </li>
         </ul>
       </section>
@@ -90,7 +140,7 @@
           </li>
         </ul>
       </section>
-      <section class="about">
+      <section class="about-shop">
         <h2 class="visually-hidden">О магазине</h2>
         <h3>Магазин Глейси - это онлайн - и офлайн-магазин по продаже мороженного собственного производства на развес</h3>
         <ul class="menu-list">
@@ -119,27 +169,30 @@
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашью сладкую рассылку и будете всегда в курсе всего самого вкусного, что происходит у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
         <form action="index.html" method="post" class="email">
-          <input type="email" name="email" required>
+          <label class="visually hidden" for="user_email_button">Электронная почта для подписки</label>
+          <input type="email" name="email" required plaseholder="Электронная почта" id="user_email_button">
         </form>
-        <button class="email_button">Отправить</button>
+        <button type="submit" class="email_button">Отправить</button>
       </section>
-      <section class=contacts>
+      <div class="index-colums">
+        <section class=contacts>
       <!---Тут должна быть еще карта--->
-        <h2 class="visually-hidden">Контакты</h2>
-        <p>Адрес главного офиса и офлайн магазина:
+          <h2 class="visually-hidden">Контакты</h2>
+          <p>Адрес главного офиса и офлайн магазина:
           ул. Большая Конюшенная 19/8, Санкт-Петербург
-        </p>
-        <p>Для заказа по телефону:
+          </p>
+          <p>Для заказа по телефону:
           8 812 450 25 25
           (С 10 до 20 ежедневно)
         <!---Форма обратной связи--->
-        </p>
-        <a class="button" href="contacts.html">Форма обратной связи</a>
-      </section>
+          </p>
+          <a class="button" href="contacts.html">Форма обратной связи</a>
+       </section>
+     </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="footer-social">
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Instagram</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
@@ -153,7 +206,7 @@
         <a class="footer-link" href="#">Экологические стандарты</a>
       </div>
       <div class="footer-copyright">
-        <a class="footer-logo">
+        <a class="footer-logo" href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy-small.png" width="108" height="38" alt="Логотип htmlacademy">
         </a>
         <p>Сделано в
@@ -161,41 +214,17 @@
         </p>
       </div>
     </footer>
-      <section class="modal modal-login">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <form action="index.html" method="post">
-          <input type="email" name="email" required placeholder="Электронная почта" autocomplete="on">
-          <input type="password" name="password" required placeholder="Пароль" autocomplete="on">
-        </form>
-        <a href="#"><button class=modal-login-button> Войти</button></a>
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистарция</a>
-      </section>
-      <section class"modal modal-catalog">
-        <h2 class="visually-hidden">Меню каталога</h2>
-        <ul class="modal-catalog-list">
-          <li class="modal-catalog-item"><a class="catalog-item" href="#">Новинки</a></li>
-          <li class="modal-catalog-item"><a class="catalog-item" href="#">Сливочное</a></li>
-          <li class="modal-catalog-item"><a class="catalog-item" href="#">Щербеты</a></li>
-          <li class="modal-catalog-item"><a class="catalog-item" href="#">Фруктовый лед</a></li>
-          <li class="modal-catalog-item"><a class="catalog-item" href="#">Мелорин</a></li>
-        </ul>
-      </section>
-      <section class="modal modal-search">
-        <form class="modal-search" action="index.ru" method="post">
-          <input type="search" name="search" id="search_button" placeholder="Что ищем?">
-          <input type="button" name="button" value="Поиск">
-        </form>
-      </section>
-      <section class="modal modal-feedback">
+      <section class="modal-modal-feedback">
         <h2 class="modal-feedback">Мы обязательно вам ответим!</h2>
         <form class="modal-feedback-form" action="index.html" method="post">
-          <input type="text" class="name-feedback" name="name-feedback" id="name-feedback" placeholder="Как вас зовут?">
-          <input type="email" class="email-feedback" name="email-feedback" id="name-feedback" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="name-feedback-place">Ваше имя</label>
+          <input type="text" class="name-feedback" name="name-feedback" id="name-feedback-place" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="email-feedback-place"
+          <input type="email" class="email-feedback" name="email-feedback" id="email-feedback-place" placeholder="Ваша почта для ответа?">
           <textarea class="text-feedback">Напишите что-нибудь...</textarea>
-          <input class="feedback-button" type="button" value="Отправить">
+          <input class="button" type="submit" value="Отправить">
         </form>
-        <button class="modal-close"><span class="modal-close">x</span></button>
+        <button type="button_feedback" class="modal-close"><span class="modal-close">x</span></button>
       </section>
   </body>
 </html>

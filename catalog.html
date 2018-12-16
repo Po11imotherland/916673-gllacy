@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Glaccy Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.png" width="154" height="64" alt="Логотип Glaccy Shop">
-        </a>
+        <ul class="main-navigation-logo">
+          <li><a class="main-header-logo" href="index.html"> <img src="img/logo.png" width="154" height="64" alt="Логотип Glaccy Shop"></a></li>
+        </ul>
         <ul class="site-navigation">
           <li class="site-navigation-current"><a href="catalog.html">Каталог</a></li>
           <li><a href="pay.html">Доставка и оплата</a></li>
@@ -23,8 +26,19 @@
           </a>
         </li>
       </ul>
-      <a href="#"><button class="button-to-search">Поиск</button></a>
-      <a href="#"><button class="button-to-sell">Корзина</button></a>
+      <a href="#"><button type="button" class="button-to-search">Поиск</button></a>
+      <a href="#"><button type="button" class="button-to-sell">Корзина</button></a>
+      <ul class="form-inside-of-basket">
+        <li>
+          <section class="inside-of-basket">
+            <!---спроси как сделать эту форму? Тут же элемент попадает по условию выбора--->
+            <form action="index.html" method="post">
+              <label class="visually-hidden" for="button-basket-form">Кнопка для отправки заказа</label>
+              <input class="button-basket" type="submit" name="button-basket" id="button-basket-form" value="Оформить заказ">
+            </form>
+          </section>
+        </li>
+      </ul>
       <p class="connect">
         С 10 до 20, ежедневно
         8 812 450 25 25
@@ -226,7 +240,7 @@
         <a class="footer-link" href="#">Экологические стандарты</a>
       </div>
       <div class="footer-copyright">
-        <a class="footer-logo">
+        <a class="footer-logo" href="https://htmlacademy.ru">
           <img src="img/logo-htmlacademy-small.png" width="108" height="38" alt="Логотип htmlacademy">
         </a>
         <p>Сделано в
@@ -234,11 +248,5 @@
         </p>
       </div>
     </footer>
-    <section class="modal-modal-basket">
-      <!---спроси как сделать эту форму? Тут же элемент попадает по условию выбора--->
-      <form action="index.html" method="post">
-        <input class="button-basket" type="button" name="button-basket" id="button-basket" value="Оформить заказ">
-      </form>
-    </section>
   </body>
 </html>
