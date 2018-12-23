@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="main-navigation-logo">
@@ -20,23 +20,16 @@
         </ul>
       </nav>
       <ul class="user-navigation">
-        <li>
-          <a class="login-link" href="login.html">
-          Вход
-          </a>
-        </li>
-      </ul>
-      <a href="#"><button type="button" class="button-to-search">Поиск</button></a>
-      <a href="#"><button type="button" class="button-to-sell">Корзина</button></a>
-      <ul class="form-inside-of-basket">
-        <li>
-          <section class="inside-of-basket">
-            <!---спроси как сделать эту форму? Тут же элемент попадает по условию выбора--->
-            <form action="index.html" method="post">
-              <label class="visually-hidden" for="button-basket-form">Кнопка для отправки заказа</label>
-              <input class="button-basket" type="submit" name="button-basket" id="button-basket-form" value="Оформить заказ">
-            </form>
-          </section>
+        <li class="user-navigation-items"><a class="login-link" href="login.html">Вход</a></li>
+        <li class="user-navigation-items" ><a href="#"><button type="button" class="button-to-search">Поиск</button></a></li>
+        <li class="user-navigation-items"><a href="#"><button type="button" class="button-to-sell">Корзина</button></a></li>
+      <ul class="inside-of-basket">
+        <li class="inside-of-basket">
+          <!---спроси как сделать эту форму? Тут же элемент попадает по условию выбора--->
+          <form action="index.html" method="post">
+            <label class="visually-hidden" for="button-basket-form">Кнопка для отправки заказа</label>
+            <input class="button-basket" type="submit" name="button-basket" id="button-basket-form" value="Оформить заказ">
+          </form>
         </li>
       </ul>
       <p class="connect">
@@ -53,6 +46,7 @@
       <h1 class="page-title">Сливочное мороженное</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр мороженного</h2>
+
         <!---форма с выбором--->
       </section>
       <section class="catalog">
@@ -225,8 +219,9 @@
       </section>
     </main>
     <footer class="main-footer">
+      <div class="container">
       <div class="footer-social">
-        <ul>
+        <ul class="footer-social">
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Instagram</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
@@ -247,6 +242,7 @@
           <a href="https://htmlacademy.ru">HTML Academy</a> 2017
         </p>
       </div>
+    </div>
     </footer>
   </body>
 </html>
