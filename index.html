@@ -15,38 +15,37 @@
       <div class="container">
         <header class="main-header">
           <nav class="main-navigation">
-            <ul class="main-navigation-logo">
-              <li>
+            <div class="main-navigation-wrapper">
+              <div class="header-container">
                 <a class="main-header-logo" href="index.html"><img src="img/logo.png" width="154" height="64" alt="Логотип Glaccy Shop"></a>
+                <ul class="site-navigation">
+                  <li class="site-navigation-current">
+                    <a href="catalog.html">Каталог</a></li>
+                    <li class="site-navigation-current">
+                      <a href="pay.html">Доставка и оплата</a>
+                    </li>
+                    <li class="site-navigation-current">
+                      <a href="info.html">О компании</a>
+                    </li>
+                  </ul>
+                <ul class="user-navigation">
+                  <li class="user-navigation-items">
+                    <a href="login.html">
+                      <button type="button"  class="button-to-inside">Вход</button>
+                    </a>
+                  </li>
+                  <li class="user-navigation-items">
+                <a href="#"><button type="button" class="button-to-search">Поиск</button>
+                </a>
+              </li>
+              <li class="user-navigation-items">
+                <a href="#"><button type="button" class="button-to-basket">Корзина</button>
+                </a>
               </li>
             </ul>
-            <ul class="site-navigation">
-              <li class="site-navigation-current">
-                <a href="catalog.html">Каталог</a>
-              </li>
-              <li class="site-navigation-current">
-                <a href="pay.html">Доставка и оплата</a>
-              </li>
-              <li class="site-navigation-current">
-                <a href="info.html">О компании</a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </nav>
-          <ul class="user-navigation">
-            <li class="user-navigation-items">
-              <a href="login.html">
-                <button type="button" class="button-to-inside">Вход</button>
-              </a>
-            </li>
-            <li class="user-navigation-items">
-              <a href="#"><button type="button" class="button-to-search">Поиск</button>
-              </a>
-            </li>
-            <li class="user-navigation-items">
-              <a href="#"><button type="button" class="button-to-basket">Корзина</button>
-              </a>
-            </li>
-          </ul>
           <section class="section-of-catalog">
             <ul class="section-of-catalog">
               <h2 class="visually-hidden">Меню каталога</h2>
@@ -196,15 +195,15 @@
                 </section>
           </div>
           <div class="index-colums-map">
+            <img src="img/maps.jpg" width="1250" height="430" alt="карта">
             <section class=contacts>
-              <!---Тут должна быть еще карта--->
               <h2 class="visually-hidden">Контакты</h2>
-              <p>Адрес главного офиса и офлайн магазина:
-                ул. Большая Конюшенная 19/8, Санкт-Петербург
+              <p class="small">Адрес главного офиса и офлайн магазина:</p>
+                <p class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург
               </p>
-              <p>Для заказа по телефону:
-                8 812 450 25 25
-                (С 10 до 20 ежедневно)
+              <p class="small">Для заказа по телефону:</p>
+              <p class="bold">8 812 450 25 25</p>
+                <p class="small">(С 10 до 20 ежедневно)
               </p>
               <a class="button" href="contacts.html">Форма обратной связи</a>
             </section>
@@ -242,7 +241,7 @@
                 </li>
               </ul>
             </div>
-            <div class="footer-link">
+            <div class="footer-link-container">
               <a class="footer-link-words" href="#">Для поставщиков</a>
               <a class="footer-link" href="#">О производстве</a>
               <a class="footer-link" href="#">Наши документы</a>
