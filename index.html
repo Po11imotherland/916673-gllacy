@@ -30,16 +30,15 @@
                   </ul>
                 <ul class="user-navigation">
                   <li class="user-navigation-items">
-                    <a href="login.html">
-                      <button type="button"  class="button-to-inside">Вход</button>
+                    <a href="login.html" class="button button-to-inside">Вход</button>
                     </a>
                   </li>
                   <li class="user-navigation-items">
-                <a href="#"><button type="button" class="button-to-search">Поиск</button>
+                <a href="#" class="button button-to-search">Поиск</button>
                 </a>
               </li>
               <li class="user-navigation-items">
-                <a href="#"><button type="button" class="button-to-basket">Корзина</button>
+                <a href="#" class="button button-to-basket">Корзина</button>
                 </a>
               </li>
             </ul>
@@ -115,12 +114,12 @@
               <li class="action-item">
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового мороженного бесплатно.</p>
-                <a href="#"><button type="button" class="button">Хочу варенье!</button></a>
+                <a href="#" class="button">Хочу варенье!</a>
               </li>
               <li class="action-item">
                 <h3>Школадки даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового мороженного бесплатно.</p>
-                <a href="#"><button type="button" class="button">Хочу шоколадки!</button></a>
+                <a href="#" class="button">Хочу шоколадки!</a>
               </li>
             </ul>
           </section>
@@ -186,10 +185,10 @@
               <section class="subscription">
                 <h2 class="visually-hidden">Подписка</h2>
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что происходит у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-                <form class="submit-form" action="index.html" method="post" class="email">
+                <form class="submit-form" action="index.html" method="post" class="email-form">
                   <p class="subscription-item">
                     <label class="visually-hidden user_email_button">Электронная почта для подписки</label>
-                    <input  id="user_email_button" type="email" name="email" required plaseholder="Электронная почта"></p>
+                    <input  id="user_email_button" type="email" name="email"  plaseholder="Электронная почта" required ></p>
                     <button type="submit" class="email_button">Отправить</button>
                   </form>
                 </section>
@@ -262,12 +261,13 @@
           <form class="modal-feedback-form" action="index.html" method="post">
             <label class="visually-hidden" for="name-feedback-place">Ваше имя</label>
             <input type="text" class="name-feedback" name="name-feedback" id="name-feedback-place" placeholder="Как вас зовут?">
-            <label class="visually-hidden" for="email-feedback-place">
+            <label class="visually-hidden" for="email-feedback-place"></label>
             <input type="email" class="email-feedback" name="email-feedback" id="email-feedback-place" placeholder="Ваша почта для ответа?">
-            <textarea class="text-feedback">Напишите что-нибудь...</textarea>
+            <label class="visually-hidden" for="text-feedback">
+            <textarea class="text-feedback" id="text-feedback">Напишите что-нибудь...</textarea>
             <input class="button" type="submit" value="Отправить">
-          </form>
           <button type="button_feedback" class="modal-close"><span class="modal-close">x</span></button>
+          </form>
         </section>
       </div>
     </div>
