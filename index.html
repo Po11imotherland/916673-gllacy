@@ -46,8 +46,8 @@
             </div>
           </nav>
           <section class="section-of-catalog">
+            <h2 class="visually-hidden">Меню каталога</h2>
             <ul class="section-of-catalog">
-              <h2 class="visually-hidden">Меню каталога</h2>
               <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Новинки</a></li>
               <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Сливочное</a></li>
               <li class="iside-of-catalog-item"><a class="catalog-item" href="#">Щербеты</a></li>
@@ -177,10 +177,10 @@
             <section class="subscription">
               <h2 class="visually-hidden">Подписка</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что происходит у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-              <form class="submit-form" action="index.html" method="post" class="email-form">
+              <form class="submit-form" action="index.html" method="post">
                 <p class="subscription-item">
                   <label class="visually-hidden user_email_button">Электронная почта для подписки</label>
-                  <input  id="user_email_button" type="email" name="email"  plaseholder="Электронная почта" required >
+                  <input  id="user_email_button" type="email" name="email"  required >
                 </p>
                 <button type="submit" class="email_button">Отправить</button>
               </form>
@@ -256,9 +256,10 @@
             <input type="text" class="name-feedback" name="name-feedback" id="name-feedback-place" placeholder="Как вас зовут?">
             <label class="visually-hidden" for="email-feedback-place"></label>
             <input type="email" class="email-feedback" name="email-feedback" id="email-feedback-place" placeholder="Ваша почта для ответа?">
-            <label class="visually-hidden" for="text-feedback">
+            <label class="visually-hidden" for="text-feedback"></label>
             <textarea class="text-feedback" id="text-feedback">Напишите что-нибудь...</textarea>
-            <input class="button" type="submit" value="Отправить">
+            <label class="visually-hidden" for="sent-feedback">
+            <input class="button" type="submit" value="Отправить" id="sent-feedback">
           <button type="button_feedback" class="modal-close"><span class="modal-close">x</span></button>
           </form>
         </section>
