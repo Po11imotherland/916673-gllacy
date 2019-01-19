@@ -213,7 +213,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
-.button-to-search {
+.hotkey-to-search {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
